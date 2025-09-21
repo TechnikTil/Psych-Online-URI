@@ -1,0 +1,4 @@
+-cp .
+-main URIHandler
+-cpp export/haxe
+-cmd haxe -main PostCompile --interp
