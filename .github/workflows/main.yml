@@ -13,6 +13,9 @@ jobs:
         with:
           haxe-version: 4.3.7
 
+      - name: Install HXCPP
+        run: haxelib install hxcpp
+
       - name: Compile
         run: haxe build.hxml
 
@@ -31,6 +34,9 @@ jobs:
       - uses: krdlab/setup-haxe@master
         with:
           haxe-version: 4.3.7
+
+      - name: Install HXCPP
+        run: haxelib install hxcpp
 
       - name: Compile
         run: |
